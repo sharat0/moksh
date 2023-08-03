@@ -1,4 +1,3 @@
-
 :root {
     --primary: #dde5eb;
     --success: #70AD47;
@@ -8,15 +7,17 @@
 }
 
 
-body{
+body {
     background-color: var(--bg);
 }
 
-nav{
+nav {
     background-color: var(--primary);
 }
 
-input,textarea, select{
+input,
+textarea,
+select {
     padding: 5px 10px;
     display: block;
     width: 60%;
@@ -29,15 +30,18 @@ input,textarea, select{
     border: none;
     border-radius: 5px;
 }
-input[type="file"]{
+
+input[type="file"] {
     border: none;
     width: 30%;
 }
-    textarea{
-        height: auto;
-        resize: none;
-    }
-form{
+
+textarea {
+    height: auto;
+    resize: none;
+}
+
+form {
     width: 60%;
     background-color: rgba(255, 255, 255, .5);
     margin-left: 20%;
@@ -48,13 +52,13 @@ form{
     margin-bottom: 20px;
 }
 
-h1{
+h1 {
     color: black !important;
     text-align: center;
     margin-top: 30px;
 }
 
-.btn{
+.btn {
     width: 20%;
     margin-left: 40%;
     margin-top: 20px;
@@ -72,39 +76,88 @@ h1{
 
 /* CSS */
 .button-63 {
-  align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 19px 24px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
-  margin-left: 42%;
-  width: 8%;
+    align-items: center;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-left: 42%;
+    width: 8%;
 }
 
 .button-63:active,
 .button-63:hover {
-  outline: 0;
+    outline: 0;
 }
 
 @media (min-width: 768px) {
-  .button-63 {
-    font-size: 24px;
-    min-width: 196px;
-  }
+    .button-63 {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    form {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .btn {
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .button-63 {
+        width: 30%;
+        margin-left: 35%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    form {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .btn {
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .button-63 {
+        width: 30%;
+        margin-left: 35%;
+    }
 }

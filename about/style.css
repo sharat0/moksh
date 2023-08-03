@@ -1,0 +1,245 @@
+main {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.6em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.block {
+    margin: 0;
+    width: 80%;
+    background-color: transparent;
+    box-shadow: none;
+    /* padding: 15px; */
+}
+
+main p {
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.block2 {
+    width: 20%;
+    text-align: center;
+}
+
+main .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.flex img {
+    display: block;
+    min-height: 300px;
+    height: fit-content;
+    width: 40%;
+}
+
+.about-us{
+    min-height: 100vh;
+    height: fit-content;
+
+}
+
+#image1{
+    min-height: 60vh;
+    height: fit-content;
+
+    width: 100vw;
+    background: url(../img/about4.jpg) no-repeat center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+#mission{
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+    height: fit-content;
+
+}
+
+#mission .block{
+    width: 40%;
+    padding: 20px;
+}
+
+#values{
+    width: 60%;
+    padding: 25px;
+    margin-top: 6%;
+}
+
+#values .block-small{
+    text-align: left;
+    width: 30%;
+    margin-bottom: 25px;
+    background-color:#dde5eb9a;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+h3{
+    text-align: center;
+}
+
+#team, #customer-satisfaction{
+    min-height: 50vh;
+    height: fit-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    padding: 30px;
+}
+
+#team .block , #customer-satisfaction .block{
+    width: 60%;
+}
+
+#team img, #customer-satisfaction img{
+    width: 35%;
+    margin-right: 3%;
+    margin-left: 2%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+}
+
+#customer-satisfaction{
+    /* background-color: #fff; */
+    box-shadow: none;
+    margin-bottom: 30px;
+}
+
+footer{
+    position: relative;
+    background-color: #fff;
+}
+
+.flex-reverse{
+    flex-direction: row-reverse !important;
+}
+
+/* responsive page */
+@media screen and (max-width: 768px) {
+    #image1{
+        min-height: 50vh;
+        height: fit-content;
+    }
+
+    #mission .block{
+        width: 100%;
+    }
+
+    #values{
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    #values .block-small{
+        width: 100%;
+    }
+
+    #team, #customer-satisfaction{
+        min-height: 50vh;
+        height: fit-content;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    #team .block , #customer-satisfaction .block{
+        width: 100%;
+    }
+
+    #team img, #customer-satisfaction img{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    #customer-satisfaction{
+        margin-bottom: 0;
+    }
+
+    footer{
+        position: relative;
+        background-color: #fff;
+    }
+
+    .flex-reverse{
+        flex-direction: row-reverse !important;
+    }
+}
+
+/* responsive page */
+@media screen and (max-width: 576px) {
+    #image1{
+        min-height: 50vh;
+        height: fit-content;
+    }
+
+    #mission .block{
+        width: 100%;
+    }
+
+    #values{
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    #values .block-small{
+        width: 100%;
+    }
+
+    #team, #customer-satisfaction{
+        min-height: 50vh;
+        height: fit-content;
+        box-shadow: none;
+        padding: 30px;
+    }
+
+    #team .block , #customer-satisfaction .block{
+        width: 100%;
+    }
+
+    #team img, #customer-satisfaction img{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    #customer-satisfaction{
+        margin-bottom: 0;
+    }
+
+    footer{
+        position: relative;
+        background-color: #fff;
+    }
+
+    .flex{
+        display: block;
+    }
+}

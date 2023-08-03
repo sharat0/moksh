@@ -19,7 +19,7 @@
     <div id="main">
         <nav>
             <ul>
-                <li class="logo"><a href="../">Moksh Fenster</a></li>
+            <li class="logo"><a href="https://mokshfenster.com/"><img src="../img/moksh-logo.png" style="width: 160px; height:6vh; margin-top: -5px"></a></li>
                 <li><a href="../">Home</a></li>
                 <li><a href="../category/">Products</a></li>
                 <li><a href="../about">About Us</a></li>

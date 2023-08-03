@@ -16,14 +16,31 @@ require 'essentials/_count.php';
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <meta name="author" content="Moksh Fenster">
+	<meta name="keywords" content="Aluminium Door and window,Infrastructure ,Ashirvad pipe,hind ware,bath fittings,wooden flooring, Quick step" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Moksh Fenster" />
+	<meta property="og:title" content="Moksh Fenster" />
+	<meta property="og:image:width" content="300">
+	<meta property="og:image:height" content="300">
+	<meta property="og:url" content="https://www.mokshfenster.com/" />
+	<meta property="og:description" content="Moksh Fenster is dealing in uPVC/Aluminium Door and window, government Infrastructure dealer for Ashirvad pipe, project dealer of hind ware for bath fittings. We are also into wooden flooring (Quick step) a Belgium based renowned brand & deals in external laminate like High pressure laminate and Aluminium Composite Panel.">
+	<meta content="Moksh Fenster is dealing in uPVC/Aluminium Door and window, government Infrastructure dealer for Ashirvad pipe, project dealer of hind ware for bath fittings. We are also into wooden flooring (Quick step) a Belgium based renowned brand & deals in external laminate like High pressure laminate and Aluminium Composite Panel." name="description" />
+	<meta name="copyright" content="https://www.mokshfenster.com/">
+	<meta name="robots" content="index, follow">
+	<meta name="rating" content="general">
+    
     <link rel="stylesheet" href="style.css">
+	<meta property="og:image" content="./favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <title>Moksh Fenster</title>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li class="logo"><a href="#">Moksh Fenster</a></li>
+        <li class="logo"><a href="https://mokshfenster.com/"><img src="./img/moksh-logo.png" style="width: 160px; height:6vh; margin-top: -5px"></a></li>
             <li><a href="#">Home</a></li>
             <li><a href="category">Products</a></li>
             <li><a href="about">About Us</a></li>
@@ -77,9 +94,10 @@ require 'essentials/_count.php';
             $result = mysqli_query($conn, $query);
             while ($row = mysqli_fetch_assoc($result)) {
 
-                echo '<div class="block" data-aos="fade-up">';
+                // echo '<div class="block" data-aos="fade-up">';
+                echo '<div class="block">';
                 echo "<a href='products?id=" . $row["id"] . "'>";
-                echo '<img src="admin/category/uploads/' . $row['img'] . '" class="box-img"></a> ';
+                echo '<img src="admin/category/uploads/' . $row['img'] . '" class="box-img" loading="lazy"></a> ';
                 echo '<div class="text">';
                 echo '<h3>' . $row['name'] . '</h3>';
                 echo '<p>' . $row['description'] . '</p>';
@@ -94,7 +112,8 @@ require 'essentials/_count.php';
     <div id="about">
         <h2>Why Choose Moksh Fenster?</h2>
         <div class="flex">
-            <div class="left top" data-aos="fade-right">
+            <div class="left top">
+            <!-- <div class="left top" data-aos="fade-right"> -->
                 <?php
                 require 'essentials/_config.php';
                 $query = " select * from home LIMIT 1";
@@ -117,7 +136,8 @@ require 'essentials/_count.php';
                 </p>
 
             </div>
-            <div class="right top" data-aos="fade-left">
+            <div class="right top">
+            <!-- <div class="right top" data-aos="fade-left"> -->
                 <h3>
                     <?php echo $t2; ?>
                 </h3>
@@ -126,7 +146,8 @@ require 'essentials/_count.php';
                 </p>
 
             </div>
-            <div class="left" data-aos="fade-right">
+            <div class="left">
+            <!-- <div class="left" data-aos="fade-right"> -->
                 <h3>
                     <?php echo $t3; ?>
                 </h3>
@@ -135,7 +156,8 @@ require 'essentials/_count.php';
                 </p>
 
             </div>
-            <div class="right" data-aos="fade-left">
+            <div class="right">
+            <!-- <div class="right" data-aos="fade-left"> -->
                 <h3>
                     <?php echo $t4; ?>
                 </h3>
@@ -193,7 +215,7 @@ require 'essentials/_count.php';
             $result = mysqli_query($conn, $query);
             while ($row = mysqli_fetch_assoc($result)) {
             
-                echo '<img src="admin/home/uploads/' . $row['img'] . '" class="box-img">';
+                echo '<img src="admin/home/uploads/' . $row['img'] . '" class="box-img" loading="lazy">';
                 
             }
             ?>
@@ -222,13 +244,33 @@ require 'essentials/_count.php';
         </div>
     </div>
 
+    
+
     <?php
     include 'essentials/_foot.php';
 
     // $count=count($v);
     ?>
-
-
+<!-- <div class="pyramid-loader">
+  <div class="wrapper">
+    <span class="side side1"></span>
+    <span class="side side2"></span>
+    <span class="side side3"></span>
+    <span class="side side4"></span>
+    <span class="shadow"></span>
+  </div>  
+</div> -->
+<!-- <script>
+    var x = document.createElement("BODY");
+    x.style.overflow="hidden";
+    // load animation
+    window.addEventListener("load", function () {
+        const loader = document.querySelector(".pyramid-loader");
+        loader.style.display="none";
+        
+        x.style.overflow="auto";
+    });
+</script> -->
     <script>
         let counts = setInterval(updated);
         let counts2 = setInterval(updated2);

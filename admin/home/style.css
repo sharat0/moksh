@@ -88,3 +88,40 @@ h2{
 footer{
     margin-top: 20px;
 }
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+    form{
+        width: 90%;
+        margin-left: 5%;
+    }
+    input,textarea, select{
+        width: 90%;
+        margin-left: 5%;
+    }
+    input[type="file"]{
+        width: 50%;
+    }
+    .btn{
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    form{
+        width: 90%;
+        margin-left: 5%;
+    }
+    input,textarea, select{
+        width: 90%;
+        margin-left: 5%;
+    }
+    input[type="file"]{
+        width: 50%;
+    }
+    .btn{
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+/* End of file style.css */

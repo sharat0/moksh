@@ -53,6 +53,35 @@
         body {
             overflow-x: hidden;
         }
+         /* responsive */
+       
+         @media (max-width: 600px) {
+            .flex {
+                flex-direction: row;
+            }
+            form{
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .head1 {
+                font-size: 3rem;
+            }
+
+            .head2 {
+                font-size: 1.5rem;
+            }
+
+            .head-text {
+                font-size: 1rem;
+            }
+
+            .text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+
     </style>
 
     <title>View Departments</title>
@@ -65,6 +94,7 @@
             <li><a href="../../home">Home</a></li>
             <li><a href="../../category">Category</a></li>
             <li><a href="../../product">Products</a></li>
+            <li><a href="../../about">About</a></li>
             <li><a href="../../logout.php">Logout</a></li>
 
         </ul>

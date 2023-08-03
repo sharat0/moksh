@@ -54,6 +54,26 @@
             color: #000;
             border: 1px solid #000;
         }
+        /* responsive */
+        @media (max-width: 600px) {
+            .flex {
+                flex-direction: column;
+            }
+
+            .left {
+                width: 100%;
+            }
+
+            .right {
+                width: 100%;
+                /* bg image */
+            }
+
+            form {
+                width: 100%;
+            }
+        }
+        
     </style>
 </head>
 
