@@ -88,7 +88,7 @@
 <body>
 <nav>
         <ul>
-        <li class="logo"><a href="https://mokshfenster.com/"><img src="../../../img/moksh-logo.png" style="width: 160px; height:6vh; margin-top: -5px"></a></li>
+        <li class="logo"><a href="https://mokshfenster.com/"><img src="../../../img/Moksh_Logo_SVG.svg" style="width: 165px; height:10vh; margin-top: -5px"></a></li>
             <li><a href="../../home">Home</a></li>
             <li><a href="../../category">Category</a></li>
             <li><a href="../../product">Products</a></li>
